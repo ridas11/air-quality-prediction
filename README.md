@@ -75,10 +75,6 @@ Errors are lowest overnight and highest from 11am to 5pm, peaking around 3pm.
 
 An initial run with the month features and deeper trees gave Linear Regression 10.50, Random Forest 11.93 and XGBoost 13.84, worse than the hour-of-day baseline. Removing the month features and using shallower trees brought XGBoost to 10.68. Mean NO2 was similar in train and test (25.7 vs 25.4), so this was not a simple level shift. I changed both things at once, so I can't say which fix did the work.
 
-### Which weather variable matters?
-
-> TODO: paste the feature-importance chart and the leave-one-out table here once run.
-
 ## Limitations
 
 - **One site, one year.** Results may not transfer to background or rural sites, and the model has seen each season only once
